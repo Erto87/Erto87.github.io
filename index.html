@@ -1,16 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+
+  <header>
+    <h1>Tero Kettunen</h1>
+    <p>Game Developer</p>
+    <nav>
+      <a href="#esittely">About Me</a>
+      <a href="#projektit">Projects</a>
+      <a href="#yhteys">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="esittely">
+      <h2>About Me</h2>
+      <div class="profile">
+        <img src="images/me.png" alt="Kuva minusta">
+        <p>Hi there 👋! My name is Tero Kettunen, and I am an aspiring game programmer. 
+        I have been exploring the fascinating world of game development and have been focusing on learning the Unity game engine and the C# programming language.</p>
+      </div>
+
+      <section id="tools">
+        <h2>🧰 Skills</h2>
+        <div class="skills-box">
+          <p><strong>Engines:</strong> Unity, Godot</p>
+          <p><strong>Coding:</strong> C++, C#, HTML, CSS, SQL, Python</p>
+          <p><strong>Graphics:</strong> Blender, GIMP</p>
+          <p><strong>Software:</strong> Visual Studio, GitHub/Desktop, PyCharm</p>
+        </div>
+      </section>
+    </section>
+
+    <section id="projektit">
+      <h2>My Projects</h2>
+
+      <div class="project">
+        <img src="images/FPH.gif" alt="FPH Pipo Hockey">
+        <h3>FPH Finnis "Pipo" Hockey</h3>
+        <p>A first-person online hockey game made with Unity.</p>
+        <p><a href="https://www.youtube.com/watch?v=qahDzt_Aobc" target="_blank">Gameplay video</a></p>
+      </div>
+
+      <div class="project">
+        <img src="images/Spaceinvaders.gif" alt="Space Invaders">
+        <h3>Space Invaders</h3>
+        <p>This version is a clone of the original game, created as a school project within a two-week timeframe. Made with Unity.</p>
+        <p><a href="https://terok.itch.io/spaceinvadersclone" target="_blank">Play</a></p>
+      </div>
+
+      <div class="project">
+        <img src="images/chess.gif" alt="ChessBot">
+        <h3>ChessBot</h3>
+        <p>A self-playing chess AI made using C++ and SFML.</p>
+        <p><a href="https://github.com/Erto87/ChessBot" target="_blank">To repository</a></p>
+      </div>
+
+      <div class="project">
+        <img src="images/AirportZ.gif" alt="AirportZ">
+        <h3>AirportZ</h3>
+        <p>Airport Z is a browser-based zombie survival game that uses real-world locations through Google Maps. Backend: Python & SQL (game logic, user data, resource management). Frontend: HTML, CSS, JavaScript (UI and gameplay interaction). Google Maps API: to generate real-world airports and travel routes.</p>
+        <p><a href="https://github.com/Erto87/AirportZ" target="_blank">To repository</a></p>
+      </div>
+
+      <div class="project">
+        <img src="images/DarkRooms.gif" alt="Dark Rooms">
+        <h3>Dark Rooms</h3>
+        <p>A first-person horror puzzle game made with Unity.</p>
+        <p><a href="https://www.youtube.com/watch?v=7ZX4Ji5UHEM&ab_channel=Diskokeisari" target="_blank">Gameplay video</a></p>
+        <p><a href="https://github.com/Erto87/ProjectHorror" target="_blank">To repository</a></p>
+      </div>
+
+      <div class="project">
+        <img src="images/delirium.gif" alt="Delirium">
+        <h3>Delirium</h3>
+        <p>Delirium is inspired by Limbo and is a 2D platformer where the player's goal is to survive and reach the end of the level. Made with Unity.</p>
+        <p><a href="https://play.unity.com/en/games/cdc1e798-3628-4e6b-bc8a-979092aab96c/delirium" target="_blank">Play</a></p>
+      </div>
+
+    </section>
+
+    <section id="yhteys">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:tero.kettunen2@metropolia.fi">tero.kettunen2@metropolia.fi</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/tero-kettunen/">https://www.linkedin.com/in/tero-kettunen/</a></p>
+      <p>GitHub: <a href="https://github.com/Erto87">https://github.com/Erto87</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tero Kettunen. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
