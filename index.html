@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <header>
     <h1>Tero Kettunen</h1>
-    <p>Game Developer</p>
+    <p><span class="dev-title">🎮 Game Developer 🕹️</span></p>
     <nav>
-      <a href="#esittely">About Me</a>
-      <a href="#projektit">Projects</a>
-      <a href="#yhteys">Contact</a>
+      <a href="#about-me">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#work-experience">Work Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="esittely">
+    <section id="about-me">
       <h2>About Me</h2>
       <div class="profile">
-        <img src="images/me.png" alt="Kuva minusta">
-        <p>Hi there 👋! My name is Tero Kettunen, and I am an aspiring game programmer. 
-        I have been exploring the fascinating world of game development and have been focusing on learning the Unity game engine and the C# programming language.</p>
+        <img src="images/me.png" alt="Picture of me">
+        <p>Hi there 👋! My name is Tero Kettunen, and I am an aspiring game programmer.
+        I have been exploring the fascinating world of game development and have focused on learning the Unity game engine and the C# programming language.</p>
       </div>
 
       <section id="tools">
@@ -38,64 +41,138 @@
       </section>
     </section>
 
-    <section id="projektit">
-      <h2>My Projects</h2>
+    <section id="projects">
+      <h2>👨‍💻My Projects</h2>
 
       <div class="project">
         <img src="images/FPH.gif" alt="FPH Pipo Hockey">
-        <h3>FPH Finnish "Pipo" Hockey</h3>
-        <p>A first-person online hockey game made with Unity.</p>
-        <p><a href="https://www.youtube.com/watch?v=qahDzt_Aobc" target="_blank">Gameplay video</a></p>
+        <h3>🏒 FPH Finnish "Pipo" Hockey</h3>
+        <p><strong>Description:</strong> Multiplayer hockey game in third-person view where players control a single skater and compete in dynamic, team-based matches hosted on a dedicated server.</p>
+        <p><strong>Tools/Tech:</strong> Unity, C#, Blender</p>
+        <p><strong>Team:</strong> 3 developers</p>
+        <p><strong>My Role:</strong> Contributed to networking code, gameplay logic, and asset implementation.</p>
+        <p>
+          📺 <a href="https://www.youtube.com/watch?v=qahDzt_Aobc" target="_blank" class="highlight-link">
+            Watch the gameplay video on YouTube
+          </a>
+        </p>
       </div>
 
       <div class="project">
         <img src="images/Spaceinvaders.gif" alt="Space Invaders">
-        <h3>Space Invaders</h3>
-        <p>This version is a clone of the original game, created as a school project within a two-week timeframe. Made with Unity.</p>
-        <p><a href="https://terok.itch.io/spaceinvadersclone" target="_blank">Play</a></p>
+        <h3>👾 Space Invaders</h3>
+        <p><strong>Description:</strong> A near-faithful remake of the original arcade classic, enhanced with a few fun twists. Created as a school project within a two-week timeframe.</p>
+        <p><strong>Tools/Tech:</strong> Unity, C#, GIMP</p>
+        <p><strong>Team:</strong> Solo</p>
+        <p><strong>My Role:</strong> Responsible for the entire development process, including programming, visuals, and game design.</p>
+        <p>🕹️ <a href="https://terok.itch.io/spaceinvadersclone" target="_blank" class="highlight-link">Play the game on Itch.io</a></p>
       </div>
 
       <div class="project">
         <img src="images/chess.gif" alt="ChessBot">
-        <h3>ChessBot</h3>
-        <p>A self-playing chess AI made using C++ and SFML.</p>
-        <p><a href="https://github.com/Erto87/ChessBot" target="_blank">To repository</a></p>
+        <h3>♟️ ChessBot</h3>
+        <p><strong>Description:</strong> A self-playing chess AI capable of making decisions and playing full matches autonomously using an evaluation algorithm.</p>
+        <p><strong>Tools/Tech:</strong> C++, SFML</p>
+        <p><strong>Team:</strong> 2 developers</p>
+        <p><strong>My Role:</strong> Focused on implementing the chess rules and developing the algorithm used for AI move evaluation.</p>
+        <p>📂 <a href="https://github.com/Erto87/ChessBot" target="_blank" class="highlight-link">View source code on GitHub</a></p>
       </div>
 
       <div class="project">
         <img src="images/AirportZ.gif" alt="AirportZ">
-        <h3>AirportZ</h3>
-        <p>Airport Z is a browser-based zombie survival game that uses real-world locations through Google Maps. Backend: Python & SQL (game logic, user data, resource management). Frontend: HTML, CSS, JavaScript (UI and gameplay interaction). Google Maps API: to generate real-world airports and travel routes.</p>
-        <p><a href="https://github.com/Erto87/AirportZ" target="_blank">To repository</a></p>
+        <h3>🧟 AirportZ</h3>
+        <p><strong>Description:</strong> A browser-based zombie survival game that uses real-world locations via the Google Maps API where players travel between airports, manage resources, and survive in a dynamic, map-based world.</p>
+        <p><strong>Tools/Tech:</strong> Python, SQL, HTML, CSS, JavaScript, Google Maps API</p>
+        <p><strong>Team:</strong> 3 developers</p>
+        <p><strong>My Role:</strong> Contributed to the core game logic, including mechanics for resource management, movement, and survival systems.</p>
+        <p>📂 <a href="https://github.com/Erto87/AirportZ" target="_blank" class="highlight-link">View source code on GitHub</a></p>
       </div>
 
       <div class="project">
         <img src="images/DarkRooms.gif" alt="Dark Rooms">
-        <h3>Dark Rooms</h3>
-        <p>A first-person horror puzzle game made with Unity.</p>
-        <p><a href="https://www.youtube.com/watch?v=7ZX4Ji5UHEM&ab_channel=Diskokeisari" target="_blank">Gameplay video</a></p>
-        <p><a href="https://github.com/Erto87/ProjectHorror" target="_blank">To repository</a></p>
+        <h3>😱Dark Rooms</h3>
+        <p><strong>Description:</strong> A first-person horror puzzle game where players navigate dark environments, collect essential items such as flashlights, flashlight batteries, and keys, all while strategically avoiding a creepy butler.</p>
+        <p><strong>Tools/Tech:</strong> Unity, C#n Blender</p>
+        <p><strong>Team:</strong> 5 members (3 coders, 2 graphic artists)</p>
+        <p><strong>My Role:</strong> Developed the inventory system and the battery/flashlight system, and worked with some asset.</p>
+        <p>📺 <a href="https://www.youtube.com/watch?v=7ZX4Ji5UHEM&ab_channel=Diskokeisari" target="_blank" class="highlight-link">Watch the gameplay video on YouTube</a></p>
+        <p>📂 <a href="https://github.com/Erto87/ProjectHorror" target="_blank" class="highlight-link">View source code on GitHub</a></p>
       </div>
 
       <div class="project">
         <img src="images/Delirium.gif" alt="Delirium">
-        <h3>Delirium</h3>
-        <p>Delirium is inspired by Limbo and is a 2D platformer where the player's goal is to survive and reach the end of the level. Made with Unity.</p>
-        <p><a href="https://play.unity.com/en/games/cdc1e798-3628-4e6b-bc8a-979092aab96c/delirium" target="_blank">Play</a></p>
+        <h3>🌑Delirium</h3>
+        <p><strong>Description:</strong> Delirium is a 2D platformer, drawing inspiration from Limbo, where the player's objective is to navigate challenging environments, overcome obstacles, and survive to reach the end of each level.</p>
+        <p><strong>Tools/Tech:</strong> Unity, C#</p>
+        <p><strong>Team:</strong> 5 members (2 coders, 3 graphic artists)</p>
+        <p><strong>My Role:</strong> Implemented the enemy pathfinding algorithm.</p>
+        <p>🕹️ <a href="https://play.unity.com/en/games/cdc1e798-3628-4e6b-bc8a-979092aab96c/delirium" target="_blank" class="highlight-link">Play Delirium on play.unity.com</a></p>
       </div>
 
     </section>
+    <section id="work-experience">
+      <h2>🔧Work Experience</h2>
 
-    <section id="yhteys">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:tero.kettunen2@metropolia.fi">tero.kettunen2@metropolia.fi</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/tero-kettunen/">https://www.linkedin.com/in/tero-kettunen/</a></p>
-      <p>GitHub: <a href="https://github.com/Erto87">https://github.com/Erto87</a></p>
+      <div class="experience">
+        <h3>Tutors Finland Oy, Spain – IT Trainee</h3>
+        <p><em>May 2022 – July 2022</em></p>
+        <p>Contributed to a Unity-based street hockey game as an intern, focusing on prototyping, C# development, agile iteration, and teamwork in an English-speaking environment.</p>
+      </div>
+
+      <div class="experience">
+        <h3>Katko Oy: CNC Machinist</h3>
+        <p><em>Summer Position: 2023, 2024</em></p>
+        <p>Operated and programmed CNC machines to precisely manufacture aluminum components according to technical drawings and quality standards.</p>
+      </div>
+
+      <div class="experience">
+        <h3>Itula Oy: Assembly Technician</h3>
+        <p><em>2014 – 2020</em></p>
+        <p>Responsible for assembly tasks, production supervision, warehouse operations, and contributing to the improvement and optimization of production processes.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>🔬Education</h2>
+      <div class="education">
+        <h3>Metropolia University of Applied Sciences</h3>
+        <p><em>Bachelor of Engineering, Information Technology – Game Applications</em></p>
+        <p><em>2024 – Present</em></p>
+        <p>Studies focused on software development, game programming, graphics, and real-time systems. Tools: Unity, Godot, Python, C++, C#.</p>
+      </div>
+
+      <div class="education">
+        <h3>Taitotalo</h3>
+        <p><em>Graduated 2023</em></p>
+        <p>Software and Game Development. Vocational school level education</p>
+      </div>
+
+      <div class="education">
+        <h3>Etelä-Karjalan ammattioppilaitos</h3>
+        <p><em>Graduated 2008</em></p>
+        <p>Automation & Electrical Energy Technology and Maintenance. Vocational school level education</p>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <h2>📫 Contact Me</h2>
+      <p>
+        <a href="mailto:tero.kettunen2@metropolia.fi" target="_blank" aria-label="Email">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tero-kettunen/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/Erto87" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Tero Kettunen. All rights reserved.</p>
+    <p>© 2025 Tero Kettunen. All rights reserved.</p>
   </footer>
 
 </body>
